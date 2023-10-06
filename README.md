@@ -1,4 +1,4 @@
-# Ecommerce Website: `EREX STORE``
+# Ecommerce Website: `EREX STORE`
 
 Ecommerce Website built or developed with
 
