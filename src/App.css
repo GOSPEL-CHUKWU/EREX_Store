@@ -1,17 +1,14 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Young+Serif&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +21,149 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+html {
+  background-image: url(./assets/background_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.header {
+  display: flex;
+  height: 6rem;
+  padding: 0 45px;
+  color: white;
+  /* grid-column: 1 / 4; */
+  /* grid-row: 1 / span 4; */
+}
+.transparent-background-header {
+  background-color: rgba(0, 0, 0, 0.63);
+}
+.white-background-header {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.logo {
+  display: flex;
+  flex: 1;
+  /* font-family: 'Merienda One', cursive; */
+  font-family: 'Bungee Spice', sans-serif;
+  align-items: center;
+  font-size: 3.3rem;
+  font-weight: 700;
+}
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 5.5;
+}
+.header-links {
+  display: flex;
+  gap: 27px;
+}
+.header-link {
+  text-decoration: none;
+  color: #ffdd4a;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+.header-link:hover {
+  /* font-size: 16px; */
+  opacity: 0.9;
+  color: white;
+  /* padding-bottom: 22px; */
+  
+}
+.subHeaders {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 40rem;
+  color: #ffdd4a;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.left-subheader-container {
+  margin: 6rem 0 0 5rem;
+}
+.left-subheader-header {
+  /* font-family: 'Young Serif', serif; */
+  font-family: 'Merienda One';
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.left-subheader-stroke {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* color: white; */
+  /* font-family: 'Merienda One'; */
+  /* font-family: 'Young Serif', serif; */
+  /* background-color: rgba(255, 255, 255, 0.25); */
+  padding: 0 1rem 0.4rem;
+  font-size: 3.45rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.left-subheader-discount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 40px;
+}
+.left-subheader-buttons {
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 40px;
+}
+.left-subheader-button {
+  padding: 10px 28px;
+}
+.left-subheader-shop-now {
+  border: 2px solid #fe9000;
+  background-color: #fe9000;
+  color: white;
+}
+.left-subheader-shop-now:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+.left-subheader-find-more:hover {
+  background-color: #fe9000;
+  color: white;
+  border: 2px solid #fe9000;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+.left-subheader-find-more {
+  border: 2px solid #fe9000;
+  color: white;
+}
+.right-subheader-container {
+  width: fit-content;
+  overflow: hidden;
+}
+.right-subheader-image {
+  width: 120%;
+  transform: rotate(18deg);
+  -webkit-transform: rotate(18deg);
+  -moz-transform: rotate(18deg);
+  -ms-transform: rotate(18deg);
+  -o-transform: rotate(18deg);
 }
