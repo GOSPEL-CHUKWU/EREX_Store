@@ -1,22 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function LeftSubHeader() {
   return (
     <div className="left-subheader-container">
       <div className="left-subheader">
         <div className="left-subheader-header">
-          Streaming offers for{' '}
-          <span className="left-subheader-stroke">Rocky</span> summer!
+          Streaming <span className="left-subheader-stroke">offers</span> for{' '}
+          <span className="left-subheader-stroke">Rocky </span> summer!
         </div>
         <div className="left-subheader-discount">40% off on all products</div>
       </div>
       <div className="left-subheader-buttons">
-        <div className="left-subheader-shop-now left-subheader-button">
+        <Link
+          to={'/about'}
+          className="left-subheader-shop-now left-subheader-button"
+        >
           Shop Now
-        </div>
-        <div className="left-subheader-find-more left-subheader-button">
+        </Link>
+        <Link
+          to={'/about'}
+          className="left-subheader-find-more left-subheader-button"
+        >
           Find More
-        </div>
+        </Link>
       </div>
     </div>
   );

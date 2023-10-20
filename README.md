@@ -6,8 +6,6 @@ Ecommerce Website built or developed with
 
 #### \* **TYPESCRIPT**
 
-#### \* **TAILWIND CSS**
-
 #### \* **NODE JS**
 
 #### \* **APIs**
