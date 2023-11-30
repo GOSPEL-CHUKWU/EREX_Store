@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../General_Components/Header';
 
 const style: React.CSSProperties = {
   color: '#61dafb',
@@ -9,6 +10,7 @@ const style: React.CSSProperties = {
 function Home() {
   return (
     <header className="App-header">
+      <Header backgroundColorIsWhite={true} />
       <p>This is gonna be ABOUT this code base... Alright!!!</p>
       <a
         style={style}

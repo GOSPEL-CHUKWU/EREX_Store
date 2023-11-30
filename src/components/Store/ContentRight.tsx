@@ -1,14 +1,25 @@
-import React from 'react';
-import FeaturedProductsTab from '../../General_Components/FeaturedProductsTab';
+import React, { useState } from 'react';
+import FeaturedProductsTab from './../../General_Components/FeaturedProductsTab';
 import fake_1 from '../../assets/offer_1.jpg';
 import fake_2 from '../../assets/offer_2.jpg';
 import fake_3 from '../../assets/offer_3.jpg';
+import Pagination from '../../General_Components/Pagination';
+import Sorting from '../../General_Components/Sorting';
 
-function FeaturedProducts() {
+const ContentRight = () => {
+  const [sortValue, setSortValue] = useState('');
+
+  const updateSort = (e: any) => {
+    const value = e.target.value;
+    setSortValue(value);
+    console.log(value);
+  };
+
   return (
-    <div className="featured-products-container">
-      <div className="featured-products-header">Featured Products</div>
-      <div className="featured-products-content-container">
+    <div className="right-content-container">
+      <div className="right-content-path-header">Home / Store</div>
+      <Sorting updateSort={updateSort} sortValue={sortValue} />
+      <div className="store-featured-products-content-container">
         <FeaturedProductsTab
           productImage={`${fake_1}`}
           title="Anchor Bracelet"
@@ -70,8 +81,9 @@ function FeaturedProducts() {
           price={212.06}
         />
       </div>
+      <Pagination />
     </div>
   );
-}
+};
 
-export default FeaturedProducts;
+export default ContentRight;
